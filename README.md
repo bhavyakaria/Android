@@ -228,3 +228,7 @@ expListView.setOnGroupCollapseListener(new ExpandableListView.OnGroupCollapseLis
     }
 });
 ```
+
+## Screenshot
+
+![alt text](https://github.com/bhavyakaria/Android/blob/expandable_list/app/src/main/res/drawable/expandable_view.JPG "Expandable List View")
