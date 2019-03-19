@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="rainbow_200">
+        <item>#ffggdd</item>
+        <item>#000000</item>
+        <item>#gfggdd</item>
+        <item>#000000</item>
+    </array>
+</resources>
