@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btnSlideUp = findViewById(R.id.btn_slide_up);
-        Button btnSlideRight = findViewById(R.id.btn_slide_right);
 
         btnSlideUp.setOnClickListener(new View.OnClickListener() {
             @Override
