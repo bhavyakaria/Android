@@ -15,12 +15,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btnSlideUp = findViewById(R.id.btn_slide_up);
+        Button btnPopIn = findViewById(R.id.btn_pop_in);
 
         btnSlideUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),SlideUpActivity.class));
                 overridePendingTransition(R.anim.slide_up, R.anim.no_animation);
+            }
+        });
+
+        btnPopIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),SlideUpActivity.class));
+                overridePendingTransition(R.anim.animate_slide_left_enter, R.anim.animate_slide_left_exit);
             }
         });
 
