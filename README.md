@@ -1,13 +1,7 @@
-# Android
-Step by step guide for various components in android.
+# Recycler View
+Step by step guide for implementing Recycler View.
 
-## Components
-1. [Recycler View](https://github.com/bhavyakaria/Android/tree/RecyclerView)
-2. [AsyncTask Loader](https://github.com/bhavyakaria/Android/tree/asynctaskloader)
-3. [Dialogs](https://github.com/bhavyakaria/Android/tree/dialogs)
-4. [Expandable List](https://github.com/bhavyakaria/Android/tree/expandable_list)
-5. [Fragment](https://github.com/bhavyakaria/Android/tree/fragment)
-6. [JSON TO POJO](https://github.com/bhavyakaria/Android/tree/json_to_pojo)
-7. [Shared  Preferences](https://github.com/bhavyakaria/Android/tree/settings_screen_using_preferences)
-8. [Shapes](https://github.com/bhavyakaria/Android/tree/shapes)
-9. [Transitions](https://github.com/bhavyakaria/Android/tree/transition_animations)
+## Dependencies
+```
+implementation 'androidx.recyclerview:recyclerview:1.0.0'
+```
