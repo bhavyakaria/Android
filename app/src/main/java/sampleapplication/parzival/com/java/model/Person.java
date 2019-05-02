@@ -1,4 +1,4 @@
-package sampleapplication.parzival.com.sampleapplication.java.model;
+package sampleapplication.parzival.com.java.model;
 
 public class Person {
     String userName;

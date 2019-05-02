@@ -1,22 +1,20 @@
-package sampleapplication.parzival.com.sampleapplication.java;
+package sampleapplication.parzival.com.java;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
-import androidx.recyclerview.widget.DividerItemDecoration;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-import sampleapplication.parzival.com.sampleapplication.R;
-import sampleapplication.parzival.com.sampleapplication.java.adapter.RecyclerViewJavaAdapter;
-import sampleapplication.parzival.com.sampleapplication.java.model.Person;
-
-import android.graphics.Rect;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
+
+import sampleapplication.parzival.com.R;
+import sampleapplication.parzival.com.java.adapter.RecyclerViewJavaAdapter;
+import sampleapplication.parzival.com.java.model.Person;
 
 public class RecyclerViewJavaActivity extends AppCompatActivity implements RecyclerViewJavaAdapter.ClickListener {
 

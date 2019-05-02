@@ -1,8 +1,8 @@
-package sampleapplication.parzival.com.sampleapplication.kotlin
+package sampleapplication.parzival.com.kotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import sampleapplication.parzival.com.sampleapplication.R
+import sampleapplication.parzival.com.R
 
 class RecyclerViewKotlinActivity : AppCompatActivity() {
 
