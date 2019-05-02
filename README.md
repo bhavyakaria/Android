@@ -1,5 +1,5 @@
 # Android
-Step by step guide for various components in android.
+Step by step guide for various components in android. Feel free to fork it and do click that star button.
 
 ## Components
 1. [Recycler View](https://github.com/bhavyakaria/Android/tree/recycler_view)
