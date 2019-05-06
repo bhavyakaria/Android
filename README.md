@@ -1,13 +1,32 @@
-# Android
-Step by step guide for various components in android. Feel free to fork it and do click that star button.
+# Anko Commons Library
+Step by step guide for using Anko Commons library with Kotlin.
 
-## Components
-1. [Recycler View](https://github.com/bhavyakaria/Android/tree/recycler_view)
-2. [AsyncTask Loader](https://github.com/bhavyakaria/Android/tree/asynctaskloader)
-3. [Dialogs](https://github.com/bhavyakaria/Android/tree/dialogs)
-4. [Expandable List](https://github.com/bhavyakaria/Android/tree/expandable_list)
-5. [Fragment](https://github.com/bhavyakaria/Android/tree/fragment)
-6. [JSON TO POJO](https://github.com/bhavyakaria/Android/tree/json_to_pojo)
-7. [Shared Preferences](https://github.com/bhavyakaria/Android/tree/settings_screen_using_preferences)
-8. [Shapes](https://github.com/bhavyakaria/Android/tree/shapes)
-9. [Transitions](https://github.com/bhavyakaria/Android/tree/transition_animations)
+## Dependencies
+```groovy
+// anko commons
+implementation "org.jetbrains.anko:anko:0.10.8"
+
+// required for snackbar
+implementation "org.jetbrains.anko:anko-design:0.10.8"
+```
+
+## Benefits of using it
+1. Writing less lines of code. Remove boilerplate code.
+
+```kotlin
+// Without Anko
+val intent = Intent(this, SecondActivity::class.java)
+intent.putExtra("id", 1)
+intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+startActivity(this, intent)
+
+// With Anko
+startActivity(intentFor<SecondActivity>("id" to 1).singleTop())
+``` 
+
+## Things to remember
+* If you only need some of the features, then refer to that particular part of the library and don't reference the meta-dependency which plugs in all available features.  
+
+
+
+

@@ -1,5 +1,6 @@
 package com.bhavyakaria.sampleapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -22,8 +23,6 @@ class MainActivity : AppCompatActivity() {
 
         // dialogs
         dialogs()
-
-
     }
 
     private fun dialogs() {
