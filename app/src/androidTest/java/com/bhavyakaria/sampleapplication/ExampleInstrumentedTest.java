@@ -1,4 +1,4 @@
-package sampleapplication.parzival.com.sampleapplication;
+package com.bhavyakaria.sampleapplication;
 
 import android.content.Context;
 import androidx.test.InstrumentationRegistry;
