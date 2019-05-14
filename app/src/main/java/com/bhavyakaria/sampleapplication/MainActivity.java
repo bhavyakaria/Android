@@ -1,4 +1,4 @@
-package sampleapplication.parzival.com.sampleapplication;
+package com.bhavyakaria.sampleapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;

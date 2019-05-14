@@ -1,4 +1,4 @@
-package sampleapplication.parzival.com.sampleapplication;
+package com.bhavyakaria.sampleapplication.sampleapplication;
 
 import org.junit.Test;
 

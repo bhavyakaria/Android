@@ -1,4 +1,4 @@
-package sampleapplication.parzival.com.sampleapplication;
+package com.bhavyakaria.sampleapplication;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
