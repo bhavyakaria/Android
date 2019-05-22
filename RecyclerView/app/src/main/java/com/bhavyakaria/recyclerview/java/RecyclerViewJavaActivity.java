@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.bhavyakaria.recyclerview.R;
 import com.bhavyakaria.recyclerview.java.simple_recycler_view.SimpleRecyclerViewActivity;
+import com.bhavyakaria.recyclerview.java.staggered_grid_recycler_view.StaggeredGridRecyclerViewActivity;
+import com.bhavyakaria.recyclerview.java.two_column_recycler_view.TwoColumnRecyclerViewActivity;
 
 public class RecyclerViewJavaActivity extends AppCompatActivity {
 
@@ -21,8 +23,8 @@ public class RecyclerViewJavaActivity extends AppCompatActivity {
 
         String[] typesOfRecyclerView = new String[] {
                 "Simple RecyclerView",
-                "Staggered Grid Layout",
-                "Simple Two Column List"
+                "Simple Two Column List",
+                "Staggered Grid Layout"
         };
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, android.R.id.text1, typesOfRecyclerView);
@@ -37,7 +39,11 @@ public class RecyclerViewJavaActivity extends AppCompatActivity {
                     case 0: startActivity(new Intent(getApplicationContext(), SimpleRecyclerViewActivity.class));
                             break;
 
-                    case 1:
+                    case 1: startActivity(new Intent(getApplicationContext(), TwoColumnRecyclerViewActivity.class));
+                            break;
+
+                    case 2: startActivity(new Intent(getApplicationContext(), StaggeredGridRecyclerViewActivity.class));
+                            break;
                 }
             }
         });

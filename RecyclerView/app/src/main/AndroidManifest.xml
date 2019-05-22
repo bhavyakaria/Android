@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.bhavyakaria.recyclerview">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".java.staggered_grid_recycler_view.StaggeredGridRecyclerViewActivity">
+        </activity>
+        <activity android:name=".java.two_column_recycler_view.TwoColumnRecyclerViewActivity">
+        </activity>
         <activity android:name=".java.simple_recycler_view.SimpleRecyclerViewActivity">
         </activity>
         <activity android:name=".java.RecyclerViewJavaActivity">

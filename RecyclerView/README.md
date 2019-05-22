@@ -9,7 +9,7 @@ implementation 'androidx.recyclerview:recyclerview:1.0.0'
 
 ## Steps
 1. Add RecyclerView component to the XML layout
-```
+```xml
 <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="0dp"
@@ -22,7 +22,7 @@ implementation 'androidx.recyclerview:recyclerview:1.0.0'
 ```
 
 2. Create a model class for data to be shown in RecyclerView
-```
+```java
 public class Person {
     String userName;
     String userEmail;
@@ -51,7 +51,7 @@ public class Person {
 ```
 
 3. Create an XML for row layout in the RecyclerView
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -98,7 +98,7 @@ public class Person {
 ```
 
 4. Create a Adapter with ClickListener interface
-```
+```java
 public class RecyclerViewJavaAdapter extends RecyclerView.Adapter<RecyclerViewJavaAdapter.MyViewHolder> {
 
     // List of Persons to be shown in RecyclerView
@@ -189,7 +189,7 @@ public class RecyclerViewJavaAdapter extends RecyclerView.Adapter<RecyclerViewJa
 ```
 
 5. Combine all together in the activity
-```
+```java
 // add data in the mPersonList
 addPersonData();
 
