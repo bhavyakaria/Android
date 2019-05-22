@@ -1,7 +1,7 @@
 
 # Recycler View
 Step by step guide for implementing Simple Recycler View.
-i
+
 ## Dependencies
 ```
 implementation 'androidx.recyclerview:recyclerview:1.0.0'
