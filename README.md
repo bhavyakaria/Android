@@ -2,7 +2,8 @@
 Step by step guide for various components in android. Feel free to fork it and do click that star button.
 
 ## Components
-1. [Recycler View](https://github.com/bhavyakaria/Android/tree/recycler_view)
+1. [Recycler View](https://github.com/bhavyakaria/Android/tree/master/RecyclerView)
+2. [Services](https://github.com/bhavyakaria/Android/tree/master/Services)
 2. [AsyncTask Loader](https://github.com/bhavyakaria/Android/tree/asynctaskloader)
 3. [Dialogs](https://github.com/bhavyakaria/Android/tree/dialogs)
 4. [Expandable List](https://github.com/bhavyakaria/Android/tree/expandable_list)
