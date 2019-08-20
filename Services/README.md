@@ -7,14 +7,14 @@
 * Even on closing or crashing of app, the services keep on running. They have a higher priority.
 * By default, a service runs in the same process as the main thread of the application.
 * Therefore, you need to use asynchronous processing for resource intensive tasks in the background.
-* The Android platform has predifined system services and every Android application can use them via `getSystemService()` method.
+* The Android platform has predefined system services and every Android application can use them via `getSystemService()` method.
 * To create a service, you create a Java class that extends the Service base class or one of  its existing subclasses.
 
 ## States of services
 1. **Started**
-A service can be started from an applicationn component, such as an activity, by calling `startService()`. It can run in background indefinitely even if the component that started  it is destroyed.
+A service can be started from an application component, such as an activity, by calling `startService()`. It can run in background indefinitely even if the component that started  it is destroyed.
 2. **Bound**
-A service is bound when anapplication component binds to it by calling `bindService()`.
+A service is bound when an application component binds to it by calling `bindService()`.
 
 
 ## Step to step guide on creating a service
@@ -68,6 +68,6 @@ stopService.setOnClickListener(new View.OnClickListener() {
 3. Add Service to the `AndroidManifest.xml` file.
 ```xml
 <service android:name=".java.SampleService"/>
-``` 
+```
 
 4. Run the  application.
