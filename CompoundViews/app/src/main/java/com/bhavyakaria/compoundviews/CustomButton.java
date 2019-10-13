@@ -16,7 +16,7 @@ import androidx.annotation.RequiresApi;
 
 public class CustomButton extends LinearLayout {
 
-    TextView buttonTitle;
+    TextView buttonTitle, textViewStatus;
     ProgressBar progressBar;
     Button uploadButton;
     TypedArray typedArray;
@@ -77,6 +77,22 @@ public class CustomButton extends LinearLayout {
         }
     }
 
+    public void showProgressBar() {
+        uploadButton.setVisibility(INVISIBLE);
+        progressBar.setVisibility(VISIBLE);
+        showStatusText("Uploading your pan card...");
+    }
+
+    public void hideProgressBar() {
+        uploadButton.setVisibility(VISIBLE);
+        progressBar.setVisibility(GONE);
+    }
+
+    public void showStatusText(String text) {
+        textViewStatus.setVisibility(VISIBLE);
+        textViewStatus.setText(text);
+    }
+
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
@@ -94,6 +110,10 @@ public class CustomButton extends LinearLayout {
                 }
             }
         });
+
+        textViewStatus = findViewById(R.id.text_view_status);
+        progressBar = findViewById(R.id.pb_profile_pic_new);
+
 
     }
 }

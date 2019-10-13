@@ -11,8 +11,7 @@
         android:id="@+id/img_profile_icon"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="8dp"
-        android:src="@drawable/ic_launcher_background"
+        android:src="@drawable/pan_card"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,23 +28,33 @@
         app:layout_constraintStart_toEndOf="@+id/img_profile_icon"
         app:layout_constraintTop_toTopOf="@+id/img_profile_icon">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_info"
+            android:padding="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/text_view_profile_pic"
+            app:layout_constraintStart_toEndOf="@+id/text_view_profile_pic"
+            app:layout_constraintTop_toTopOf="@+id/text_view_profile_pic" />
+
 
         <TextView
             android:id="@+id/text_view_profile_pic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Profile Pic"
-            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintBottom_toTopOf="@+id/text_view_status"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/text_view_status"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="(Profile Pic Uploaded)"
             android:textColor="@color/colorPrimary"
             android:textSize="10sp"
+            android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@+id/text_view_profile_pic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text_view_profile_pic" />
@@ -72,9 +81,6 @@
         android:id="@+id/btn_upload_profile_pic"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginEnd="8dp"
-        android:drawablePadding="8dp"
-        android:padding="8dp"
         android:text="Edit"
         android:textAllCaps="false"
         android:textSize="14sp"

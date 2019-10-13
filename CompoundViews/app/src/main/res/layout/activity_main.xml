@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        custombutton:buttonTitle="Photo upload"
+        custombutton:buttonTitle="Pan Card"
         custombutton:buttonId="@id/button_one"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
