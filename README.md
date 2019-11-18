@@ -12,3 +12,4 @@ Step by step guide for various components in android. Feel free to fork it and d
 7. [Shared Preferences](https://github.com/bhavyakaria/Android/tree/settings_screen_using_preferences)
 8. [Shapes](https://github.com/bhavyakaria/Android/tree/shapes)
 9. [Transitions](https://github.com/bhavyakaria/Android/tree/transition_animations)
+10. [Retrofit + RxJava](https://github.com/bhavyakaria/Android/tree/master/RetrofitRxJava)
