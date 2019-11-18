@@ -114,9 +114,9 @@ public class MainActivity extends AppCompatActivity {
 
     private static void slideUpNow(final View view, final int delay) {
 
-        view.setTranslationX(view.getWidth());
+        view.setTranslationY(view.getWidth());
         view.animate()
-                .translationX(0)
+                .translationY(100)
                 .alpha(1.0f)
                 .setDuration(500)
                 .setStartDelay(delay)
