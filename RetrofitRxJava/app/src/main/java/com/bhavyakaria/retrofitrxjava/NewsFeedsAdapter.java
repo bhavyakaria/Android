@@ -70,8 +70,6 @@ public class NewsFeedsAdapter extends RecyclerView.Adapter<NewsFeedsAdapter.MyVi
 
     // ClickListener interface with methods for detecting clicks in the activity
     public interface ClickListener {
-        void onProfileClick(Article article, View v);
-        void onUserNameClick(Article article, View v);
         void onRowClick(Article article, View v);
     }
 }

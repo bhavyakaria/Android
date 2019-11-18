@@ -2,18 +2,14 @@ package com.bhavyakaria.retrofitrxjava;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.bhavyakaria.retrofitrxjava.models.ArticleResponseWrapper;
 import com.bhavyakaria.retrofitrxjava.networking.ApiClient;
 import com.bhavyakaria.retrofitrxjava.networking.ApiService;
 
-import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
@@ -27,36 +23,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setupRecyclerView();
+
+        // make api call using retrofit and handle response using rxjava
+        ApiService apiService = ApiClient.getClient().create(ApiService.class);
+        apiService.getHeadlines(BuildConfig.NewsApiKey, "business", "in")
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(
+                    val -> {
+                        adapter = new NewsFeedsAdapter(val.getArticles(), this);
+                        recyclerView.setAdapter(adapter);
+                    },
+                    err -> {
+
+                    },
+                    () -> Log.d("Parzival", "Completed")
+                    );
+    }
+
+    private void setupRecyclerView() {
         recyclerView = findViewById(R.id.recycler_view_news_feeds);
 
         // set layout manager
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
-        ApiService apiService = ApiClient.getClientWithoutAuth().create(ApiService.class);
-
-        Observable<ArticleResponseWrapper> call = apiService.getHeadlines("", "business", "in");
-        call.subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(
-                        val -> {
-                            adapter = new NewsFeedsAdapter(val.getArticles(), this);
-                            recyclerView.setAdapter(adapter);
-                        },
-                        err -> {
-
-                        },
-                        () -> Log.d("Parzival", "Completed")
-                        );
-
     }
 
-    private void handleResults(ArticleResponseWrapper articleResponseWrapper){
-
-    }
-
-    private void handleError(Throwable t){
-        Toast.makeText(this, "ERROR IN FETCHING API RESPONSE. Try again",
-                Toast.LENGTH_LONG).show();
-    }
 }
