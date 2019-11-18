@@ -1,4 +1,6 @@
-# Android
+# Android 📱
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+
 Step by step guide for various components in android. Feel free to fork it and do click that star button.
 
 ## Components
