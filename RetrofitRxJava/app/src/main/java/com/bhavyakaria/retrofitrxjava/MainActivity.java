@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         ApiService apiService = ApiClient.getClientWithoutAuth().create(ApiService.class);
 
-        Observable<ArticleResponseWrapper> call = apiService.getHeadlines("9dc512c432a94ef29d6bfe3d0e699148", "business", "in");
+        Observable<ArticleResponseWrapper> call = apiService.getHeadlines("", "business", "in");
         call.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(
