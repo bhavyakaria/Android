@@ -16,6 +16,12 @@ Step by step guide for various components in android. Feel free to fork it and d
 9. [Transitions](https://github.com/bhavyakaria/Android/tree/transition_animations)
 10. [Retrofit + RxJava](https://github.com/bhavyakaria/Android/tree/master/RetrofitRxJava)
 
+## Some useful resources to learn Android Development
+1. [Ultimate Android Resources](https://github.com/aritraroy/UltimateAndroidReference)
+2. [Firebase Samples](https://github.com/firebase/quickstart-android)
+3. [Android Examples](https://github.com/nisrulz/android-examples)
+4. [Codelabs for Android Developer Fundamentals](https://developer.android.com/courses/fundamentals-training/toc-v2) 
+
 ## License
 ```
 MIT License
