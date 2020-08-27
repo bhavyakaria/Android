@@ -15,6 +15,7 @@ Step by step guide for various components in android. Feel free to fork it and d
 8. [Shapes](https://github.com/bhavyakaria/Android/tree/shapes)
 9. [Transitions](https://github.com/bhavyakaria/Android/tree/transition_animations)
 10. [Retrofit + RxJava](https://github.com/bhavyakaria/Android/tree/master/RetrofitRxJava)
+11. [Facebook Login](https://github.com/bhavyakaria/Android/tree/master/FacebookLogin)
 
 ## Some useful resources to learn Android Development
 1. [Ultimate Android Resources](https://github.com/aritraroy/UltimateAndroidReference)
