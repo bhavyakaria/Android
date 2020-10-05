@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/seekbar_for_loan_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:dsb_allowTrackClickToDrag="true"
+        app:dsb_indicatorElevation="8dp"
+        app:dsb_indicatorPopupEnabled="false"
+        app:dsb_max="7"
+        app:dsb_min="0"
+        app:dsb_progressColor="@color/colorPrimary"
+        app:dsb_rippleColor="@color/colorPrimary"
+        app:dsb_thumbSize="18dp"
+        app:dsb_trackColor="@color/seekbar_track_color"
+        app:dsb_trackHeight="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
